@@ -1,8 +1,3 @@
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
-
 (require 'package)
 (package-initialize)
 
@@ -11,8 +6,6 @@
              '("melpa-stable" . "https://stable.melpa.org/packages/"))
 
 (eval-when-compile
-  ;; Following line is not needed if use-package.el is in ~/.emacs.d
-  ;;(add-to-list 'load-path "C:/Users/chris/AppData/Roaming/.emacs.d/elpa/use-package-2.4")
   (require 'use-package))
 
 
@@ -48,10 +41,6 @@
       org-ref-pdf-directory "~/bibliography/bibtex-pdfs/")
 
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (manoj-dark)))
  '(custom-safe-themes
    (quote
@@ -63,10 +52,6 @@
  '(deft-use-filter-string-for-filename t)
  '(package-selected-packages (quote (doom-themes org-ref chocolate-theme async deft ##))))
 (custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
  )
 
 (load-theme 'doom-moonlight t)
