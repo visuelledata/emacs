@@ -28,9 +28,12 @@
       :after deft org
       :hook (org-mode . org-roam-mode)
       :load-path "C:/Users/chris/AppData/Roaming/.emacs.d/elpa/org-roam"
+      :custom
+      (org-roam-directory "C:/Users/chris/Dropbox/org-mode/")
       :bind
       ("C-c n l" . org-roam)
       ("C-c n t" . org-roam-today)
+      ("C-c n f" . org-roam-find-file)
       ("C-c n i" . org-roam-insert)
       ("C-c n g" . org-roam-show-graph))
 
